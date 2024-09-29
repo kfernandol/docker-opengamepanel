@@ -21,10 +21,7 @@ cp .env.dist .env
 cp docker-compose.override.yml.dist docker-compose.override.yml
 ```
 
-Finally, up the compose:
-```bash
-docker-compose up --d
-```
+Finally, up the compose: ```bash docker-compose up -d ```
 
 ## Panel Web Credentials
 ```
@@ -36,7 +33,7 @@ Password: password
 1. Open a terminal window on your host machine.
 2. Execute the following command:
 
-``` docker logs ogp-agent-1 ```
+``` docker logs ogp-agent-1 ``` or  ``` docker logs ogp_agent_1 ```
 
 3. In the terminal output, locate the OGP credentials. They should appear in a format similar to this:
 ```
