@@ -25,3 +25,9 @@ Finally, up the compose:
 ```bash
 docker-compose up --detach
 ```
+
+## Panel Web Credentials
+```
+Username: Admin
+Password: Password
+```
