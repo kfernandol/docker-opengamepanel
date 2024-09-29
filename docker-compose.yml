@@ -18,5 +18,6 @@ services:
     build: agent
     ports:
     - "27015:12679"
+    - "8848:8848"
     volumes:
     - "./data/OGP_User_Files:/home/ogp_agent/OGP_User_Files"
