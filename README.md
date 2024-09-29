@@ -23,11 +23,38 @@ cp docker-compose.override.yml.dist docker-compose.override.yml
 
 Finally, up the compose:
 ```bash
-docker-compose up --detach
+docker-compose up --d
 ```
 
 ## Panel Web Credentials
 ```
-Username: Admin
-Password: Password
+Username: admin
+Password: password
+```
+
+## Get Remote Encryption Key
+1. Open a terminal window on your host machine.
+2. Execute the following command:
+
+``` docker logs ogp-agent-1 ```
+
+3. In the terminal output, locate the OGP credentials. They should appear in a format similar to this:
+```
+This is the OGP credentials:
+ogpUser=ogp_agent
+ogpPass=1WvXl6wo3TmKtqC
+ogpEnc=q8N9n3oN
+```
+
+## Panel Web GameServer Config
+```
+Remote Host: Your Host IP
+Remote Host Port: 27015
+Remote Host Name: Name Display in Panel
+FTP IP: Your Host IP
+FTP Port: 21
+Remote Encryption Key: Write your ogpEnc
+Time Out: 5
+Use NAT: No
+Display Public IP: 
 ```
